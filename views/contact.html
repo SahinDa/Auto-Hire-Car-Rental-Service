@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="fav.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Auto Hire</title>
+    <style>
+      .brand-logo {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50px;
+        margin: 0 5px 0 0;
+      }
+  
+      .nav-link {
+        font-size: larger;
+        margin: 5px;
+      }
+      /* .static-navbar{
+        position: fixed;
+      } */
+  
+      /* footer section */
+      #footer {
+        background-color: rgb(30, 30, 36);
+        width: 100%;
+      margin-top:
+      }
+      .footer_subtitle{
+        color: aliceblue;
+        text-align: center;
+        
+      }
+      .footer_link {
+        color: aliceblue;
+        text-align: center;
+        
+      }
+      .footer-container{
+        color: aliceblue;
+        text-align: center;
+      }
+  
+      .social-media{
+      margin: 5px;
+      padding: 5px;
+      border-radius: 42px;
+  
+      }
+      .container {
+           margin-top:40px;
+      }
+      .concern { border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+        
+      }
+      .concern #subject {
+        width:68rem;
+        height:20rem;
+      }
+    </style>
+</head>
+
+<body>
+  <section class="static-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a href="/index"><img class="brand-logo" src="finallogo.jpg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="/index">Service <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
+          <!--<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Topics
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Geeks Auto</a>
+              <a class="dropdown-item" href="#">Geeks Moto</a>
+              <a class="dropdown-item" href="#">Geeks Mini</a>
+              <a class="dropdown-item" href="#">Geeks Lux</a>
+              <a class="dropdown-item" href="#">Geeks E-Richshaw</a>
+              <a class="dropdown-item" href="#">Geeks Bus</a> 
+            
+          </li> -->
+  
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <!-- <div class="mx-2">
+          <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">LogIn</button>
+          <button class="btn btn-danger  " data-toggle="modal" data-target="#signupModal">SignUp</button>
+          </div> -->
+      </div>
+      </div>
+    </nav>
+  </section>
+
+  <!--
+    <div class="container">
+        
+   
+      <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog">
+          
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h4 class="modal-title">Login To Geeks  </h4>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+    <div class="container">
+          
+     
+      <div class="modal fade" id="signupModal" role="dialog">
+        <div class="modal-dialog">
+         
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h4 class="modal-title">Get an Geeks Account</h4>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Create an Account</button>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+-->
+
+
+    <div class="container">
+ <h2> Contact Us</h2>
+ <form class="row g-3" action="/submit" method="POST">
+    <div class="col-md-6">
+      <label for="inputEmail4" name="email" class="form-label">Email *</label>
+      <input type="email" name="email" class="form-control" id="inputEmail4" required >
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" name="password" class="form-label">Password</label>
+      <input type="password" name="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" name="address" class="form-label">Address</label>
+      <input type="text" name="address" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" name="address2" class="form-label">Address 2</label>
+      <input type="text" name="address2" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" name="city" class="form-label">City</label>
+      <input type="text" name="city" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" name="state" class="form-label">State</label>
+      <select id="inputState" name="state" class="form-select">
+        <option >Punjab</option>
+        <option>Madhapadesh</option>
+        <option>UttarParadesh</option>
+        <option selected>West Bengal</option>
+        <option>Maharastra</option>
+        <option>TamilNadu</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" name="zip" class="form-label">Zip</label>
+      <input type="text" name="zip" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <div class="concern">
+    <label for="subject">Write Your Concern * </label><br>
+    <textarea id="subject" name="subject" placeholder="Write your Concern Here .." required ></textarea>
+  </div>
+  
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+  </div>
+
+    
+
+  <section id="footer">
+    <div class="container">
+      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+        <div class="col">
+          <div class="p-3  ">
+            <div class="footer_data" data-sr-id="18"
+              style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2.8s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2.8s cubic-bezier(0.5, 0, 0, 1) 0s;">
+              <h2 class="footer_subtitle">About</h2>
+              <ul>
+                <li class="footer_item"><a href="/about" class="footer_link">About Us</a></li>
+                <li class="footer_item"><a href="#" class="footer_link">Features</a></li>
+                <li class="footer_item"><a href="#" class="footer_link">New &amp; Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="p-3  ">
+            <div class="footer_data" data-sr-id="19"
+              style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2.8s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2.8s cubic-bezier(0.5, 0, 0, 1) 0s;">
+              <h2 class="footer_subtitle"> Company</h2>
+              <ul>
+                <li class="footer_item"><a href="#" class="footer_link">Team</a></li>
+                <li class="footer_item"><a href="#" class="footer_link">Plan X Pricing</a></li>
+                <li class="footer_item"><a href="#" class="footer_link">Become a Member</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col">
+          <div class="p-3 ">
+            <div class="footer_data" data-sr-id="20"
+              style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2.8s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2.8s cubic-bezier(0.5, 0, 0, 1) 0s;">
+              <h2 class="footer_subtitle">Support</h2>
+              <ul>
+                <li class="footer_item"><a href="#" class="footer_link">FAQs</a></li>
+                <li class="footer_item"><a href="#" class="footer_link">Support Center</a></li>
+                <li class="footer_item"><a href="/contact" class="footer_link">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="p-3  ">
+            <div class="footer_data" data-sr-id="17"
+              style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2.8s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2.8s cubic-bezier(0.5, 0, 0, 1) 0s;">
+              <h2 class="footer_subtitle">Social Link</h2>
+              <!--<p class="footer_description">Travel You Choose the <br> Destination We Offer You the <br> Experience</p> -->
+
+              <div >
+                <a href="https://facebook.com/" target="_blank" class="footer_social"><i
+                    class="ri-facebook-box-fill"></i><img class="social-media" src="fb.png" width="70px" height="70px"></a>
+
+                <a href="https://twitter.com/" target="_blank" class="footer_social"><i class="ri-twitter-fill"></i><img
+                  class="social-media"  src="twitter.png" width="50px" height="50px"></a>
+
+                <a href="https://instagram.com/" target="_blank" class="footer_social"><i
+                    class="ri-instagram-fill"></i><img class="social-media" src="insta.png" width="50px" height="50px"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>© 2021–2022 Auto Hire, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+  </section>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

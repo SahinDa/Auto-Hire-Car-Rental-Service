@@ -1,0 +1,72 @@
+body {
+    background-color: aliceblue;
+    box-sizing: border-box;
+}
+.container {
+    margin: 100px 300px;
+    background-color: palegreen;
+}
+.regi #RF {
+    text-align: center;
+    color: rgba(151, 10, 10, 0.592);
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border: 3px solid rgb(227, 220, 239);
+    border-radius: 10px 30px ;
+    margin: 3px 300px;
+    background-color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    
+}
+.regi #RF:hover {
+    font-size: 30px;
+    color: rgb(3, 0, 5);
+   
+}
+.all{
+   /* border: 3px solid rgb(18, 210, 207);*/
+    margin: 10px 250px;
+    border-radius: 40px 20px;
+
+} 
+.registerbtn{
+    text-align: center;
+    border: 3px solid rgb(250, 252, 253);
+    margin-left: 250px;
+    padding: 14px 70px;
+     border-radius: 50px;
+     color: #fff;
+     background-color: rgb(41, 238, 15);
+     opacity: 0.8;
+}
+.registerbtn:hover{
+    opacity:1;
+}
+.con{
+    padding:10px;
+}
+.signin{
+    padding:10px;
+}
+#header {
+    padding:10px;
+}
+input[type=text] , input[type=password] {
+    width:100%;
+    margin:5px 0 22px 0;
+    display: inline-block;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+a {
+    color:dodgerblue;
+}
+input[type=text]:focus , input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
